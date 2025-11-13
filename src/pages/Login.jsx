@@ -55,7 +55,6 @@ const Login = () => {
                   {show ? <FaEyeSlash /> : <FaEye />}
                 </button>
               </div>
-              {/* <p className="text-[15px] text-red-500">{msg}</p> */}
               <button className="btn bg-green-600 border-0 p-4 w-full mt-4">Login</button>
             </form>
             <button onClick={handlepopup} className="btn my-2 bg-white text-black border-[#e5e5e5]">
