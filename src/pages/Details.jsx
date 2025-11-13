@@ -30,7 +30,6 @@ export default function Details() {
 
   }, [like])
 
-  //main 
   const [my, setmy] = useState([])
   useEffect(() => {
     setloading(true)
