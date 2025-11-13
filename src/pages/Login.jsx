@@ -32,7 +32,6 @@ const Login = () => {
       })
       .catch(err => {
         console.log(err)
-        // setmsg(`${err}`)
         toast.error(`${err}`)
       })
   }
