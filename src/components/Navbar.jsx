@@ -6,32 +6,34 @@ const Navbar = () => {
     const { user, logoutman } = use(Authcontext)
     console.log('user', user)
     const [hover, sethover] = useState(false)
-    
 
-    
-    const[theme, settheme]=useState(localStorage.getItem("theme")||"light")
-    useEffect(()=>{
+
+
+    const [theme, settheme] = useState(localStorage.getItem("theme") || "light")
+    useEffect(() => {
         document.querySelector('html').setAttribute("data-theme", theme)
-        localStorage.setItem("theme",theme)
-    },[theme])
-    const handletheme=(e)=>{
+        localStorage.setItem("theme", theme)
+    }, [theme])
+    const handletheme = (e) => {
         console.log(e)
-        const newtheme = e?"dark":"light"
+        const newtheme = e ? "dark" : "light"
         settheme(newtheme)
     }
-    
+
     const list =
         user ?
             <>
-                <li><NavLink to={'/'}>Home</NavLink></li>
-                <li><NavLink to={'/explore'}>Explore Artworks</NavLink></li>
-                <li><NavLink to={'/add'}>Add Artwork</NavLink></li>
-                <li><NavLink to={'/gallery'}>My Gallery</NavLink></li>
-                <li><NavLink to={'/favorites'}>My Favorites</NavLink></li>
+                <li ><NavLink className='whitespace-nowrap' to={'/'}>Home</NavLink></li>
+                <li ><NavLink className='whitespace-nowrap' to={'/explore'}>Explore Artworks</NavLink></li>
+                <li ><NavLink className='whitespace-nowrap' to={'/add'}>Add Artwork</NavLink></li>
+                <li ><NavLink className='whitespace-nowrap' to={'/gallery'}>My Gallery</NavLink></li>
+                <li ><NavLink className='whitespace-nowrap' to={'/favorites'}>My Favorites</NavLink></li>
+                <li><div className=""><input onChange={(e) => handletheme(e.target.checked)} defaultChecked={localStorage.getItem("theme") === "dark"} type="checkbox" value="synthwave" className="toggle theme-controller" /></div></li>
             </> :
             <>
-                <li><NavLink to={'/'}>Home</NavLink></li>
-                <li><NavLink to={'/explore'}>Explore Artworks</NavLink></li>
+                <li ><NavLink className='whitespace-nowrap' to={'/'}>Home</NavLink></li>
+                <li ><NavLink className='whitespace-nowrap' to={'/explore'}>Explore Artworks</NavLink></li>
+                <li><div className=""><input onChange={(e) => handletheme(e.target.checked)} defaultChecked={localStorage.getItem("theme") === "dark"} type="checkbox" value="synthwave" className="toggle theme-controller" /></div></li>
             </>
     return (
         <div className="navbar bg-base-100 shadow-sm">
@@ -42,8 +44,10 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex="-1"
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        {list}
+                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-auto p-2 shadow">
+                        {
+                            list
+                        }
                     </ul>
                 </div>
                 <a className="btn text-green-600 font-black btn-ghost text-xl">ARTIFY</a>
@@ -54,9 +58,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end relative">
-                <input onChange={(e)=>handletheme(e.target.checked)} defaultChecked={localStorage.getItem("theme")==="dark"} type="checkbox" value="synthwave" className="toggle mx-5 theme-controller" />
-                {/* <input onChange={(e) => handleTheme(e.target.checked)} type="checkbox" defaultChecked={localStorage.getItem('theme') === "dark"} className="toggle mx-5" />               */}
-                  {
+                {/* <input onChange={(e) => handletheme(e.target.checked)} defaultChecked={localStorage.getItem("theme") === "dark"} type="checkbox" value="synthwave" className="toggle mx-5 theme-controller" /> */}
+                {
                     user ?
                         <div className="relative mr-3" onMouseEnter={() => sethover(true)} onMouseLeave={() => sethover(false)}>
                             <img
