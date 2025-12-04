@@ -13,7 +13,7 @@ const slides = [
 const Banner = () => {
   return (
     <Swiper modules={[Autoplay, Pagination, EffectFade]} loop={true}
-    autoplay={{ delay: 1700, disableOnInteraction: false }} pagination={{ clickable: true }} effect="fade" className="w-full lg:h-[95vh] h-[99vh]">
+    autoplay={{ delay: 1700, disableOnInteraction: false }} pagination={{ clickable: true }} effect="fade" className="w-full lg:h-[70vh] h-[70vh]">
       {slides.map((slide) => (
         <SwiperSlide  className="flex items-center justify-center text-white text-4xl font-bold bg-cover bg-center" style={{ backgroundImage: `url(${slide.img})` }}>
           {slide.title}
