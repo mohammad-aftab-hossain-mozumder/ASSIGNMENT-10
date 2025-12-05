@@ -14,9 +14,9 @@ The platform maintains a clean UI, smooth UX, and efficient CRUD operations usin
 
 ## 🚀 **Live Demo**
 
-🔗 **Live Website:** https://dreamy-gelato-08b03c.netlify.app/  
+🔗 **Live Website:** http://artify-main-project.surge.sh/ 
 
-🔗 **Client Repository:** https://github.com/MD-Aftab-Hossain/ASSIGNMENT-10
+🔗 **Client Repository:** https://github.com/mohammad-aftab-hossain-mozumder/ASSIGNMENT-10
 
 
 
@@ -212,7 +212,7 @@ Follow the steps below to run the project on your local machine.
 
 ```bash
 
-git clone https://github.com/MD-Aftab-Hossain/ASSIGNMENT-10.git
+git clone https://github.com/mohammad-aftab-hossain-mozumder/ASSIGNMENT-10.git
 
 cd ASSIGNMENT-10
 
