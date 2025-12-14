@@ -14,7 +14,7 @@ The platform maintains a clean UI, smooth UX, and efficient CRUD operations usin
 
 ## 🚀 **Live Demo**
 
-🔗 **Live Website:** http://artify-main-project.surge.sh/ 
+🔗 **Live Website:** https://assignment-10-firebase-522b0.web.app/
 
 🔗 **Client Repository:** https://github.com/mohammad-aftab-hossain-mozumder/ASSIGNMENT-10
 
