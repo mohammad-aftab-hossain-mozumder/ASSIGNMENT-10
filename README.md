@@ -18,6 +18,7 @@ The platform maintains a clean UI, smooth UX, and efficient CRUD operations usin
 
 🔗 **Client Repository:** https://github.com/mohammad-aftab-hossain-mozumder/ASSIGNMENT-10
 
+🔗 **Server Repository:** https://github.com/mohammad-aftab-hossain-mozumder/ASSIGNMENT-10-SERVER.git
 
 
 ---
