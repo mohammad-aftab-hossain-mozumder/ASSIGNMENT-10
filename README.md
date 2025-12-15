@@ -16,7 +16,7 @@ The platform maintains a clean UI, smooth UX, and efficient CRUD operations usin
 
 🔗 **Live Website:** https://assignment-10-firebase-522b0.web.app/
 
-🔗 **Client Repository:** https://github.com/mohammad-aftab-hossain-mozumder/ASSIGNMENT-10
+🔗 **Client Repository:** https://github.com/mohammad-aftab-hossain-mozumder/ASSIGNMENT-10.git
 
 🔗 **Server Repository:** https://github.com/mohammad-aftab-hossain-mozumder/ASSIGNMENT-10-SERVER.git
 
